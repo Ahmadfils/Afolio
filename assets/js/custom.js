@@ -26,6 +26,12 @@ $(function() {
   
   // Page animation initialize
   new WOW().init();
+
+   // Year
+  function getYear(){
+    $('#displayYear').text(new Date().getFullYear());
+  }
+   getYear();
   
   // Back to top
   var backTop = $(".btn-back_to_top");
@@ -228,4 +234,12 @@ $(document).ready(function() {
 
   }
   counterInit();
+});
+
+$(document).ready(function(){
+    $('#downloadPdf').on('click', function(e){
+        e.preventDefault(); 
+        var pdfFile = $(this).data('file'); 
+        window.location.href = pdfFile; 
+    });
 });
