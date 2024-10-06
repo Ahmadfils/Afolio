@@ -242,4 +242,37 @@ $(document).ready(function(){
         var pdfFile = $(this).data('file'); 
         window.location.href = pdfFile; 
     });
+
+    //envoyer um email
+
+    $('#contactForm').submit(function(event) {
+
+      event.preventDefault();
+
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var subject = $('subject').val();
+      var message =  $('#message').val(); 
+
+     $.ajax({
+       url:"https://formspree.io/ahmadfils257@gmail.com",
+       method: "POST",
+       data:{
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+       }
+       dataType: "json"
+     })
+     .done(function(){
+      alert('Envoi  du message reussi avec succes !');
+     })
+     .fail(function(){
+      alert('Une erreur s\'est produite lors de l\'envoi du message');
+     });
+  });
 });
+
+
+

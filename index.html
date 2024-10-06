@@ -6,12 +6,12 @@
   
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <meta name="title" content="A-Folio - Portfolio">
-  <meta name="key" content="A-Folio, A Folio, Portfolio, Resume, IT CV">
-  <meta name="description" content="A-Folio, This is my WebSite which shows my skills resume, my CV and my portfolio in IT">
+  <meta name="title" content="Afolio - Portfolio">
+  <meta name="keywords" content="Afolio, A Folio, Portfolio, Resume, IT CV">
+  <meta name="description" content="Afolio, This is my Website which shows my skills resume, my CV and my portfolio in IT">
 
-  <meta property="og:title" content="A-Folio, Portfolio">
-  <meta property="og:description" content="A-Folio, This is my WebSite which shows my skills resume, my CV and my portfolio in IT">
+  <meta property="og:title" content="Afolio-Portfolio">
+  <meta property="og:description" content="Afolio, This is my WebSite which shows my skills resume, my CV and my portfolio in IT">
   <meta property="og:image" content="https://ahmadfils.github.io/Afolio/assets/img/person1.jpg">
   <meta property="og:url" content="https://ahmadfils.github.io/Afolio/">
   
@@ -35,7 +35,7 @@
   
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
-  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.css">
 
   
 </head>
@@ -107,7 +107,7 @@
             <li><b>Age:</b> 25</li>
             <li><b>Gender:</b> Male</li>
           </ul>
-          <a href="#" id="downloadPdf" target="_blank" data-file="assets/CV-Abasi.pdf"><button class="btn btn-theme-outline">Download CV</button></a>
+          <a href="#" id="downloadPdf" target="_blank" data-file="assets/cv.pdf"><button class="btn btn-theme-outline">Download CV</button></a>
         </div>
       </div>
     </div>
@@ -285,7 +285,7 @@
             </div>
             <div class="caption">
               <h4 class="fg-theme">DevOps & System management</h4>
-              <p>I can work as a systems administrator or Webmaster. I can emphasize collaboration and communication between development and operations teams to ensure that software is delivered quickly, reliably, and with high quality.  </p>
+              <p>I can work as a system administrator or Webmaster. I can emphasize collaboration and communication between development and operations teams to ensure that software is delivered quickly, reliably, and with high quality.  </p>
             </div>
           </div>
         </div>
@@ -367,6 +367,15 @@
             <div class="img-caption">
               <h5 class="fg-theme">Setic Hosting & SSL management App</h5>
               <p>Management, Hosting</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item apps web wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work10.PNG" data-fancybox data-caption="<h5 class='fg-theme'>Startup Website and Blog</h5> <p>Web, Blog</p>">
+            <img src="assets/img/work/work10.PNG" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Setic Client Hosting & SSL management App</h5>
+              <p>Management, Dashboard</p>
             </div>
           </div>
         </div>
@@ -461,19 +470,19 @@
           </div>
         </div>
         <div class="col-lg-5">
-          <form class="vg-contact-form">
+          <form id="contactForm" class="vg-contact-form">
             <div class="form-row">
               <div class="col-12 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Name" placeholder="Your Name">
+                <input class="form-control" type="text" id="name" name="name" placeholder="Your Name">
               </div>
               <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Email" placeholder="Email Address">
+                <input class="form-control" type="email" id="email" name="email" placeholder="Email Address">
               </div>
               <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Subject" placeholder="Subject">
+                <input class="form-control" type="text" id="subject" name="subject" placeholder="Subject">
               </div>
               <div class="col-12 mt-3 wow fadeInUp">
-                <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Enter message here.."></textarea>
               </div>
               <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
             </div>
@@ -557,8 +566,6 @@
   <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
 
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-
-  <script src="assets/js/google-maps.js"></script>
     
   <script src="assets/js/custom.js"></script>
   
